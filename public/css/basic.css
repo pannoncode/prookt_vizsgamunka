@@ -1,0 +1,408 @@
+/*------------------------*\
+  #BASIC SETTINGS
+\*------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #ffffff;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  width: 100%;
+  color: rgb(98, 67, 27);
+  background-image: url("../assets/headerpic2.jpg");
+  background-position: center;
+  background-repeat: repeat-y;
+  align-items: center;
+  position: fixed;
+  overflow-y: auto;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-repeat: repeat-y;
+    background-size: cover;
+    align-items: center;
+    overflow-y: auto;
+  }
+}
+
+h1 {
+  font-size: 6.4vw;
+}
+
+.margin-top {
+  margin-top: 1rem;
+}
+
+.margin-left {
+  margin-left: 2rem;
+}
+
+.margin-right {
+  margin-right: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex--wrapper {
+  flex-wrap: wrap;
+}
+
+.flex-direction--column {
+  flex-direction: column;
+}
+
+.flex-position--center {
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*------------------------*\
+  #HEADER SETTINGS
+\*------------------------*/
+
+.header-title {
+  margin: 2rem auto;
+  gap: 10rem;
+}
+
+@media (max-width: 600px) {
+  .header-title {
+    flex-direction: column;
+    gap: .3rem;
+  }
+}
+
+.title {
+  color: rgb(98, 67, 27);
+  letter-spacing: .1rem;
+  font-family: 'Calligraffitti', cursive;
+}
+
+
+/*------------------------*\
+  #NAVIGATION SETTINGS
+\*------------------------*/
+
+.menu-row {
+  margin: 2rem auto;
+}
+
+.menu-item {
+  cursor: pointer;
+  font-size: 2.3vw;
+  font-weight: bold;
+  font-family: 'Calligraffitti', cursive;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  color: rgb(98, 67, 27);
+  right: 0;
+}
+
+@media (max-width: 600px) {
+  .menu-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-item {
+    font-size: 1rem;
+    padding-top: 1rem;
+  }
+  .menu-item--margin_right {
+    margin-right: 0;
+  }
+  .menu-item--margin_left {
+    margin-left: 0;
+  }
+}
+
+
+/*-------------------------------*\
+  #CARDS & CARDS CONTENT SETTINGS
+\*-------------------------------*/
+
+
+/*********************
+  Hairdresser's Cards
+**********************/
+
+.main-style {
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+@media (max-width: 600px) {
+  .main-style {
+    flex-direction: column;
+  }
+}
+
+.cards {
+  border: 2.5px solid rgb(98, 67, 27);
+  border-radius: 15px 15px 15px 15px;
+  width: 30%;
+  margin-left: 5rem;
+  padding: 1rem;
+  background-color: hsla(28, 37%, 92%, 0.6);
+  padding: 1.5rem 1rem;
+  margin: 1rem auto;
+  overflow-wrap: anywhere;
+}
+
+.cards h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cards-header {
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .cards {
+    width: 80%;
+    margin: 1rem auto;
+  }
+}
+
+.profpic {
+  border-radius: 50%;
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+.cards-footer a {
+  background-color: #ccb084;
+  color: white;
+  padding: .5rem;
+  text-decoration: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.cards-footer a:hover {
+  background-color: white;
+  color: #ccb084;
+  transition-delay: .1s;
+}
+
+
+/*******************
+  Appointment Cards
+********************/
+
+.cards-appointment-wrapper {
+  width: 50rem;
+  border: 2px solid rgb(98, 67, 27);
+  border-radius: 15px 15px 15px 15px;
+  background-color: hsla(0, 0%, 50%, .4);
+  margin: 1rem auto;
+}
+
+.cards-appointment {
+  margin: 1rem auto;
+  width: 98%;
+  padding: 1rem;
+  background-color: hsla(0, 0%, 100%, .7);
+  border-radius: 15px 15px 15px 15px;
+}
+
+.datePick {
+  display: inline;
+  margin-left: 1rem;
+}
+
+#datePicker {
+  padding: .3rem;
+  border-radius: 15px;
+}
+
+.times {
+  text-align: center;
+  border: 1px solid green;
+  background-color: #9da693;
+  color: white;
+  width: 4rem;
+  margin: .3rem;
+  padding: .2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .cards-appointment-wrapper {
+    width: 98vw;
+  }
+  .cards-appointment {
+    margin: .2rem;
+  }
+  .datePick {
+    margin: 0 auto;
+  }
+}
+
+.inputName {
+  width: 15rem;
+  height: 2rem;
+}
+
+.inputName::placeholder {
+  text-align: center;
+  font-weight: bold;
+}
+
+.btn--mainpage {
+  float: right;
+  margin-right: 1rem;
+  text-decoration: none;
+  padding: .3rem;
+  border-radius: 15px;
+  background-color: #ccb084;
+  color: white;
+  text-transform: uppercase;
+}
+
+.btn--mainpage:hover {
+  color: #ccb084;
+  background-color: white;
+  transition-delay: .1s;
+}
+
+
+/*------------------------*\
+  #ADMIN SETTINGS
+\*------------------------*/
+
+.adminCards-appointment-wrapper {
+  width: 70rem;
+  border: 2px solid rgb(98, 67, 27);
+  border-radius: 15px 15px 15px 15px;
+  background-color: hsla(0, 0%, 50%, .4);
+  margin: 1rem auto;
+}
+
+.header--cell {
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+.admin--cell {
+  text-align: center;
+}
+
+.header--row {
+  background-color: hsla(8, 27%, 66%, .4);
+  border-radius: 15px;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.admin--row {
+  margin-top: 1.7rem;
+  padding: 1rem;
+}
+
+.delete {
+  text-align: center;
+}
+
+.delete span {
+  border: 0.1px solid black;
+  padding: .1rem 1rem;
+  border-radius: 5px;
+}
+
+.delete span:hover {
+  background-color: #9e3641;
+  cursor: pointer;
+  font-weight: bold;
+  padding: .17rem 1.1rem;
+}
+
+.admin--row:hover {
+  background-color: hsla(0, 18%, 75%, .2);
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+
+/*------------------------*\
+  #FOOTER SETTINGS
+\*------------------------*/
+
+.reserved-content {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+
+/*------------------------*\
+  #FOOTER SETTINGS
+\*------------------------*/
+
+.footer-style {
+  color: #aaaaaa;
+  font-weight: bold;
+  background: hsl(0, 0%, 20%, 0.6);
+  line-height: 1.6;
+  height: auto;
+  margin-top: auto;
+  width: 100%;
+}
+
+.footer__text {
+  text-align: center;
+  margin: auto;
+  font-size: .688rem;
+  display: block;
+  padding: .5rem;
+}
+
+.footer__hr {
+  height: 1px;
+  border: none;
+  background: #444444;
+}
+
+.footer span {
+  margin-left: .3rem;
+}
+
+
+/*------------------------*\
+  #EFFECTS FOR JS
+\*------------------------*/
+
+
+/*******************
+  #TEXT EFFECTS
+*******************/
+
+.text__shadows {
+  text-shadow: .3rem 0 #ecdfd6;
+  color: black;
+  font-size: 2.5vw;
+  transition-delay: .15s;
+}
+
+
+/*****************************
+  #APPOINTMENT TIME EFFECTS
+*****************************/
+
+.times-bgc__reserved {
+  background-color: #9e3641;
+}

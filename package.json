@@ -1,0 +1,26 @@
+{
+  "name": "vizsgamunka",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pannoncode/vizsgamunka_prooktatas.git"
+  },
+  "author": "Tóth György",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pannoncode/vizsgamunka_prooktatas/issues"
+  },
+  "homepage": "https://github.com/pannoncode/vizsgamunka_prooktatas#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongodb": "^4.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "description": ""
+}
